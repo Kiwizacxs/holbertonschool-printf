@@ -1,13 +1,14 @@
 #include "main.h"
 
-void
+int
 print_char(va_list g, int n)
 {
 	_putchar(va_arg(g, int));
 	n++;
+	return (n);
 }
 
-void
+int
 print_string(va_list g, int n)
 {
 	int i = 0;
@@ -19,9 +20,10 @@ print_string(va_list g, int n)
 		n++;
 		i++;
 	}
+	return (n);
 }
 
-void
+int
 print_numbers(int num, int n)
 {
 	char strnum[12];
@@ -60,4 +62,5 @@ print_numbers(int num, int n)
 			len++;
 		}
 	}
+	return (n);
 }

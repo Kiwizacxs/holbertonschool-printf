@@ -1,6 +1,6 @@
 #include "main.h"
 
-void
+int
 check_char(char s, va_list g, int n)
 {
 	char *options = "discp";
@@ -27,5 +27,7 @@ check_char(char s, va_list g, int n)
 	else
 	{
 		_putchar('%'), _putchar(s);
+		n = n + 2;
 	}
+	return (n);
 }

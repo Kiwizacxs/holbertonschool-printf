@@ -23,7 +23,7 @@ _printf(const char *format, ...)
 		}
 		len++;
 	}
-	_putchar('\n');
 	va_end(arg);
+	printf("%d", count);
 	return (count);
 }
