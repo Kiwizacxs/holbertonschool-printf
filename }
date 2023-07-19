@@ -1,0 +1,16 @@
+#include "main.h"
+
+void
+check_str(char s, va_list g)
+{
+	char *options = "dicsp";
+
+	if (s == options[2])
+	{
+		_putchar(va_arg(g, int));
+	}
+	else
+	{
+		return;
+	}
+}
