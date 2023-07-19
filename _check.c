@@ -10,23 +10,22 @@ check_char(char s, va_list g, int n)
 	{
 		print_char(g, n);
 	}
-	if (s == '%')
+	else if (s == '%')
 	{
 		_putchar(s);
 		n++;
 	}
-	if (s == options[2])
+	else if (s == options[2])
 	{
 		print_string(g, n);
 	}
-	if (s == options[0] || s == options[1])
+	else if (s == options[0] || s == options[1])
 	{
 		num = va_arg(g, int);
 		print_numbers(num, n);
 	}
 	else
 	{
-		_putchar('%');
-		_putchar(s);
+		_putchar('%'), _putchar(s);
 	}
 }
