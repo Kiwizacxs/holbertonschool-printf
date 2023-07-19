@@ -4,6 +4,7 @@ void
 check_char(char s, va_list g, int n)
 {
 	char *options = "discp";
+	int num;
 
 	if (s == options[3])
 	{
@@ -17,6 +18,11 @@ check_char(char s, va_list g, int n)
 	if (s == options[2])
 	{
 		print_string(g, n);
+	}
+	if (s == options[0] || s == options[1])
+	{
+		num = va_arg(g, int);
+		print_numbers(num, n);
 	}
 	else
 	{

@@ -10,5 +10,6 @@ int _printf(const char *format, ...);
 void check_char(char s, va_list g, int n);
 void print_char(va_list g, int n);
 void print_string(va_list g, int n);
+void print_numbers(int num, int n);
 
 #endif
