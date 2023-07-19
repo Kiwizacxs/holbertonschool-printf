@@ -1,26 +1,22 @@
 #include "main.h"
 
-int
-print_char(va_list g, int n)
+void
+print_char(va_list g)
 {
 	_putchar(va_arg(g, int));
-	n++;
-	return (n);
 }
 
 int
-print_string(va_list g, int n)
+print_string(va_list g, int c)
 {
-	int i = 0;
 	char *str = va_arg(g, char *);
 
-	while (str[i] != '\0')
+	while (str[c] != '\0')
 	{
-		_putchar(str[i]);
-		n++;
-		i++;
+		_putchar(str[c]);
+		c++;
 	}
-	return (n);
+	return (c);
 }
 
 int

@@ -1,33 +1,34 @@
 #include "main.h"
 
 int
-check_char(char s, va_list g, int n)
+check_char(char s, va_list g)
 {
 	char *options = "discp";
 	int num;
+	int c = 0;
 
 	if (s == options[3])
 	{
-		print_char(g, n);
+		print_char(g);
+		return (1);
 	}
 	else if (s == '%')
 	{
 		_putchar(s);
-		n++;
+		return (1);
 	}
 	else if (s == options[2])
 	{
-		print_string(g, n);
+		return (print_string(g, c));
 	}
 	else if (s == options[0] || s == options[1])
 	{
 		num = va_arg(g, int);
-		print_numbers(num, n);
+		return (print_numbers(num, c));
 	}
 	else
 	{
 		_putchar('%'), _putchar(s);
-		n = n + 2;
+		return (2);
 	}
-	return (n);
 }

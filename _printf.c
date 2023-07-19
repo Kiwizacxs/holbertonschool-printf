@@ -12,7 +12,7 @@ _printf(const char *format, ...)
 	{
 		if (format[len] == '%')
 		{
-			check_char(format[len + 1], arg, count);
+			count = count + check_char(format[len + 1], arg);
 			len++;
 		}
 		else
@@ -24,6 +24,5 @@ _printf(const char *format, ...)
 		len++;
 	}
 	va_end(arg);
-	printf("%d", count);
 	return (count);
 }
