@@ -47,3 +47,8 @@ It only supports a subset of format specifiers and basic functionality.
 The code has been tested and should work correctly for valid format strings and arguments.
 Please use the function responsibly and make sure to validate the input parameters.
 
+## Authors 
+Nahuel Acosta
+Brian De León
+Diego Piñeyro
+
