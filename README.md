@@ -2,7 +2,37 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title> FUNCTION PRINTF </title>
+    <title>_printf Function README</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 30px;
+        }
+
+        h1 {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+
+        pre {
+            background-color: #f7f7f7;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+    </style>
 </head>
 <body>
     <h1>_printf Function README</h1>
@@ -38,7 +68,15 @@
 
     <h2>Example</h2>
     <pre>
-        ///*example*///
+        #include "main.h"
+
+        int main()
+        {
+            int count;
+            count = _printf("Hello, %s! You are %d years old.\n", "John", 30);
+            _printf("Number of characters printed: %d\n", count);
+            return (0);
+        }
     </pre>
 
     <h2>Notes</h2>
