@@ -15,12 +15,17 @@ It formats and prints the data to the standard output (console) based on the giv
 ## Supported Format Specifiers
 The following format specifiers are supported:
 
-%c: Character
-%s: String
-%d or %i: Signed decimal integer
-%u: Unsigned decimal integer
-%x: Unsigned hexadecimal integer (lowercase)
-%X: Unsigned hexadecimal integer (uppercase)
+<div align="center">
+
+| **Format**|      **Output**     
+|:---------:|:-------------------:
+|     %c    | Prints a character  
+|     %s    | Prints a string     
+|     %%    | Prints a percentage 
+|     %d    | Prints a decimal integer    
+|     %i    | Prints a integer     
+
+</div>
 
 ## Return Value
 The function returns the total number of characters printed (excluding the null-terminating byte used to end output to strings).
@@ -48,7 +53,7 @@ The code has been tested and should work correctly for valid format strings and 
 Please use the function responsibly and make sure to validate the input parameters.
 
 ## Authors 
-Nahuel Acosta
-Brian De León
-Diego Piñeyro
+&ensp;[<img src="https://img.shields.io/badge/MateoOlv-%23121011.svg?style=for-the-badge&logo=github&logoColor=white">](https://github.com/acostanahuel)
+&ensp;[<img src="https://img.shields.io/badge/MateoOlv-%23121011.svg?style=for-the-badge&logo=github&logoColor=white">](https://github.com/Kiwizacxs)
+&ensp;[<img src="https://img.shields.io/badge/MateoOlv-%23121011.svg?style=for-the-badge&logo=github&logoColor=white">](https://github.com/Diego29012)
 
