@@ -54,6 +54,6 @@ Please use the function responsibly and make sure to validate the input paramete
 
 ## Authors 
 &ensp;[<img src="https://img.shields.io/badge/acostanahuel-%23121011.svg?style=for-the-badge&logo=github&logoColor=white">](https://github.com/acostanahuel)
-&ensp;[<img src="https://img.shields.io/badge/Kiwizacxs-%23121011.svg?style=for-the-badge&logo=github&logoColor=white">](https://github.com/Kiwizacxs)
-&ensp;[<img src="https://img.shields.io/badge/Diego29012-%23121011.svg?style=for-the-badge&logo=github&logoColor=white">](https://github.com/Diego29012)
+&ensp;[<img src="https://img.shields.io/badge/BrianDeLeon-%23121011.svg?style=for-the-badge&logo=github&logoColor=white">](https://github.com/Kiwizacxs)
+&ensp;[<img src="https://img.shields.io/badge/DiegoPiñeyro-%23121011.svg?style=for-the-badge&logo=github&logoColor=white">](https://github.com/Diego29012)
 
