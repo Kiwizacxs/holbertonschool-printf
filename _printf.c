@@ -27,7 +27,6 @@ _printf(const char *format, ...)
 		}
 		len++;
 	}
-	printf("%");
 	va_end(arg);
 	return (count);
 }
