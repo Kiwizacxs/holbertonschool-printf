@@ -10,7 +10,7 @@ _printf(const char *format, ...)
 	va_start(arg, format);
 	while (format[len] != '\0')
 	{
-		if (format[len] == '%' && format[len] != '\0')
+		if (format[len] == '%' && format[len + 1] != '\0')
 		{
 			count = count + check_char(format[len + 1], arg);
 			len++;
