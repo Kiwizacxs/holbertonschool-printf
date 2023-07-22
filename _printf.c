@@ -9,7 +9,7 @@ _printf(const char *format, ...)
 
 	if (format == NULL)
 	{
-		_putchar("");
+		_putchar('\0');
 		return (0);
 	}
 	va_start(arg, format);
