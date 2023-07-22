@@ -7,6 +7,8 @@ _printf(const char *format, ...)
 	int count = 0;
 	va_list arg;
 
+	if (format == NULL)
+		return ('\0');
 	va_start(arg, format);
 	while (format[len] != '\0')
 	{
