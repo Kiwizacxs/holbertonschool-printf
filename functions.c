@@ -25,16 +25,23 @@ print_string(va_list g, int c)
 int
 print_numbers(int num, int n)
 {
-	char strnum[12];
+	char strnum[11];
 	int m = 1000000000;
 	int len = 0;
 	int digit;
+	int check_min = 0;
 
 	if (num < 0)
 	{
 		_putchar(45);
 		n++;
-		num = -num;
+		if (num == INT_MIN)
+		{
+			num = INT_MAX;
+			check_min = 1;
+		}
+		else
+			num = -num;
 	}
 	if (num == 0)
 	{
@@ -46,7 +53,10 @@ print_numbers(int num, int n)
 		while (len != 10)
 		{
 			digit = num / m;
-			strnum[len] = digit + '0';
+			if (len == 9 && check_min == 1)
+				strnum[len] = digit + '1';
+			else
+				strnum[len] = digit + '0';
 			len++;
 			num = num % m;
 			m = m / 10;

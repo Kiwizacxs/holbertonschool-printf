@@ -1,7 +1,12 @@
 #include "main.h"
 
-int
-_printf(const char *format, ...)
+/**
+ * _printf - prints to stdout based on format.
+ * @format: format to use to print.
+ * Return:  number of characters printed.
+ */
+
+int _printf(const char *format, ...)
 {
 	int len = 0;
 	int count = 0;
