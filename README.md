@@ -1,3 +1,9 @@
+<h1> Flowchart </h1>
+
+
+![image_2023-07-27_095715725](https://github.com/Kiwizacxs/holbertonschool-printf/assets/124789249/d3261c0b-53bf-4818-ad9a-b025e8786dc4)
+
+
 # _printf Function README
 
 This is a custom implementation of the printf function in C.
